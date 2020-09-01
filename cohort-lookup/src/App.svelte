@@ -2,12 +2,10 @@
   let query: string;
 
   import data from "./data";
-  let idSet = new Set<string>();
   let map = new Map<string, string>();
   for (let row of data) {
     let osis = row[0];
     let cohort = row[2];
-    idSet.add(osis);
     map.set(osis, cohort);
   }
 
